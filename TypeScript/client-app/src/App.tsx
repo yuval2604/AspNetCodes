@@ -4,6 +4,7 @@ import { LoginContainer } from "./pages/login.container";
 import PageB from "./pages/pageB";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import FetchData from "./pages/FetchData";
 
 export const App = () => {
   return (
@@ -11,7 +12,7 @@ export const App = () => {
       <HashRouter>
         <Switch>
           <Route exact={true} path="/" component={LoginContainer} />
-          <Route path="/pageB" component={PageB} />
+          <Route path="/pageB" component={FetchData} />
         </Switch>
       </HashRouter>
     </>

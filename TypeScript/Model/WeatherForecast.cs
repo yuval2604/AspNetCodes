@@ -1,6 +1,6 @@
 using System;
 
-namespace TypeScript
+namespace Model
 {
     public class WeatherForecast
     {
