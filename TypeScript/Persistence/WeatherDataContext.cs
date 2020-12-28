@@ -14,11 +14,11 @@ namespace TypeScript.Persistence
         public List<WeatherForecast> Forcast { get; set; }
         public WeatherDataContext()
         {
-            Forcast =  returnForcast() ;
+            Forcast =  ReturnForcast() ;
             
         }
 
-        public List<WeatherForecast> returnForcast()
+        public List<WeatherForecast> ReturnForcast()
         {
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
