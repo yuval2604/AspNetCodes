@@ -6,7 +6,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
-
+using AspNetToDoList.Services;
+using Microsoft.Extensions.Options;
+using AspNetToDoList.Models;
 
 namespace AspNetToDoList
 {
@@ -27,6 +29,19 @@ namespace AspNetToDoList
               
                 opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
             });
+
+            // MONGO
+            services.Configure<SchoolDatabaseSettings>(
+                    Configuration.GetSection(nameof(SchoolDatabaseSettings)));
+            services.AddSingleton<ISchoolDatabaseSettings>(provider =>
+                provider.GetRequiredService<IOptions<SchoolDatabaseSettings>>().Value);
+
+            services.AddScoped<StudentService>();
+            services.AddScoped<CourseService>();
+
+            services.AddControllers();
+
+            // END
 
             services.AddControllersWithViews();
 
