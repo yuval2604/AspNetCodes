@@ -3,6 +3,6 @@ namespace RestApiCourceTurorial.Contract.V1.Requests
 {
     public class CreatedPostRequest
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

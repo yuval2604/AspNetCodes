@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RestApiCourceTurorial.Services;
 
 namespace RestApiCourceTurorial.Installers
 {
@@ -9,7 +10,7 @@ namespace RestApiCourceTurorial.Installers
       
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
-           
+            services.AddSingleton<IPostService, PostService>();
         }
     }
 }
