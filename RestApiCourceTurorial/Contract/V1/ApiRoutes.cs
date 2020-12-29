@@ -10,7 +10,7 @@ namespace RestApiCourceTurorial.Contract
 
        public static class Posts
         {
-            public const string GetAll = Base+"/post";
+            public const string GetAll = Base+"/posts";
             
         }
     }

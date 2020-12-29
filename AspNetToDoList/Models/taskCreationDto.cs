@@ -6,7 +6,6 @@ namespace AspNetToDoList.Models
     public class TaskCreationDto
     {
        
-
         [MaxLength(50)]
         public string title { get; set; }
 

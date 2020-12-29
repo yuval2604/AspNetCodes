@@ -16,27 +16,29 @@ namespace AspNetToDoList
     {
         public static void Main(string[] args)
         {
-            var host = CreateHostBuilder(args).Build();
+        
+                var host = CreateHostBuilder(args).Build();
 
-            using (var scope = host.Services.CreateScope())
-            {
-                var services = scope.ServiceProvider;
-                try
-
+                using (var scope = host.Services.CreateScope())
                 {
-                    var context = services.GetRequiredService<TaskContext>();
-                    context.Database.EnsureDeleted();
-                    context.Database.Migrate();
-                    
-                }
-                catch (Exception ex)
-                {
-                    var logger = services.GetRequiredService<ILogger<Program>>();
-                    logger.LogError(ex, "An error occured during migration");
-                }
-            }
+                    var services = scope.ServiceProvider;
+                    try
 
-            host.Run();
+                    {
+                        var context = services.GetRequiredService<TaskContext>();
+                        context.Database.EnsureDeleted();
+                        context.Database.Migrate();
+                        
+                    }
+                    catch (Exception ex)
+                    {
+                        var logger = services.GetRequiredService<ILogger<Program>>();
+                        logger.LogError(ex, "An error occured during migration");
+                    }
+                }
+
+                host.Run();
+        
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
