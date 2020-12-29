@@ -8,5 +8,6 @@ namespace RestApiCourceTurorial.Services
     {
         List<Post> GetPosts();
         Post GetPostId(Guid postId);
+        bool UpdatePost(Post postToUpdate);
     }
 }

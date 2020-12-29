@@ -33,6 +33,13 @@ namespace RestApiCourceTurorial.Services
             return _posts.SingleOrDefault(x => x.Id == postId);
         }
 
-        
+        public bool UpdatePost(Post postToUpdate)
+        {
+            var exsists = GetPostId(postToUpdate.Id) != null;
+            if (!exsists) return false;
+            var index = _posts.FindIndex(x => x.Id == postToUpdate.Id);
+            _posts[index] = postToUpdate;
+            return true;
+        }
     }
 }
