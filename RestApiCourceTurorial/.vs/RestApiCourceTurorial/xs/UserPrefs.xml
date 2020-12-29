@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{7FAC025B-C12E-4A85-8DB1-18647FE4B248}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/TestController.cs">
+    <Files>
+      <File FileName="Startup.cs" Line="29" Column="1" />
+      <File FileName="appsettings.json" Line="1" Column="1" />
+      <File FileName="Options/SwaggerOptions.cs" Line="1" Column="1" />
+      <File FileName="Controllers/TestController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RestApiCourceTurorial" expanded="True">
+            <Node name="RestApiCourceTurorial" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="TestController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Options" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.RestApiCourceTurorial PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
