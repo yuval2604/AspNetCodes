@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "dDCOc5wPW15lHOsRXMig5UQijj7J9S4ctp6pUPkjFQ6RzQF4zd5Ft+fEwaamIhKQ3EO6aPClqQIeVHafONF/KA==",
+  "dgSpecHash": "13+zKMw8wdHtb+A6lameg9wSIUoFF4yFLsDSdzuZC1XxtkINrdY836Y6lDy8eIJzl6kXNqvqu/6nTAcYVsNQtg==",
   "success": true,
   "projectFilePath": "/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/RestApiCourceTurorial.csproj",
   "expectedPackageFiles": [
+    "/Users/user/.nuget/packages/aspnetcore.authentication.apikey/5.0.0/aspnetcore.authentication.apikey.5.0.0.nupkg.sha512",
     "/Users/user/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/user/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/3.1.0/microsoft.aspnetcore.authentication.jwtbearer.3.1.0.nupkg.sha512",
     "/Users/user/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/user/.nuget/packages/microsoft.data.sqlclient/2.0.1/microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "/Users/user/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.0.1/microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

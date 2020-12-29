@@ -104,3 +104,5 @@
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/AspNetCore.Authentication.ApiKey.dll
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
