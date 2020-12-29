@@ -1,34 +1,26 @@
 ﻿<Properties StartupConfiguration="{7FAC025B-C12E-4A85-8DB1-18647FE4B248}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Services/PostService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Installers/DbInstaller.cs">
     <Files>
-      <File FileName="Installers/DbInstaller.cs" Line="13" Column="64" IsPinned="True" />
-      <File FileName="Contract/V1/Responses/PostResponse.cs" Line="6" Column="20" IsPinned="True" />
-      <File FileName="Contract/V1/ApiRoutes.cs" Line="14" Column="58" />
-      <File FileName="Controllers/PostsController.cs" Line="39" Column="45" />
-      <File FileName="Services/IPostService.cs" Line="11" Column="14" />
-      <File FileName="Services/PostService.cs" Line="42" Column="25" />
+      <File FileName="Program.cs" Line="27" Column="57" />
+      <File FileName="Data/DataContext.cs" Line="30" Column="10" />
+      <File FileName="Domain/Post.cs" Line="9" Column="20" />
+      <File FileName="Installers/DbInstaller.cs" Line="30" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RestApiCourceTurorial" expanded="True">
             <Node name="RestApiCourceTurorial" expanded="True">
-              <Node name="Contract" expanded="True">
-                <Node name="V1" expanded="True">
-                  <Node name="Requests" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="Controllers" expanded="True">
-                <Node name="V1" expanded="True" />
-              </Node>
               <Node name="Domain" expanded="True" />
-              <Node name="Installers" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="PostService.cs" selected="True" />
+              <Node name="Installers" expanded="True">
+                <Node name="DbInstaller.cs" selected="True" />
               </Node>
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
