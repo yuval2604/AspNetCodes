@@ -1,23 +1,29 @@
 ﻿<Properties StartupConfiguration="{7FAC025B-C12E-4A85-8DB1-18647FE4B248}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Installers/MvcInstaller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Contract/V1/Requests/CreatedPostRequest.cs">
     <Files>
-      <File FileName="Controllers/PostsController.cs" Line="33" Column="2" />
-      <File FileName="Domain/Post.cs" Line="6" Column="39" />
-      <File FileName="Controllers/TestController.cs" Line="7" Column="6" />
-      <File FileName="Program.cs" Line="1" Column="1" />
-      <File FileName="Startup.cs" Line="29" Column="63" />
-      <File FileName="Installers/InstallerExtensions.cs" Line="10" Column="53" />
-      <File FileName="Installers/DbInstaller.cs" Line="12" Column="12" />
-      <File FileName="Installers/MvcInstaller.cs" Line="1" Column="1" />
+      <File FileName="Installers/DbInstaller.cs" Line="12" Column="12" IsPinned="True" />
+      <File FileName="Controllers/PostsController.cs" Line="36" Column="57" />
+      <File FileName="Contract/V1/Requests/CreatedPostRequest.cs" Line="6" Column="39" />
+      <File FileName="Contract/V1/Responses/PostResponse.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RestApiCourceTurorial" expanded="True">
             <Node name="RestApiCourceTurorial" expanded="True">
-              <Node name="Installers" expanded="True">
-                <Node name="MvcInstaller.cs" selected="True" />
+              <Node name="Contract" expanded="True">
+                <Node name="V1" expanded="True">
+                  <Node name="Requests" expanded="True">
+                    <Node name="CreatedPostRequest.cs" selected="True" />
+                  </Node>
+                  <Node name="Responses" expanded="True" />
+                </Node>
               </Node>
+              <Node name="Controllers" expanded="True">
+                <Node name="V1" expanded="True" />
+              </Node>
+              <Node name="Domain" expanded="True" />
+              <Node name="Installers" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -28,7 +34,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.RestApiCourceTurorial PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/Installers/MvcInstaller.cs" relfile="Installers/MvcInstaller.cs" line="10" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

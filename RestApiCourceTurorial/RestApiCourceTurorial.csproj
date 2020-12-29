@@ -12,5 +12,7 @@
     <Folder Include="Controllers\V1\" />
     <Folder Include="Contract\" />
     <Folder Include="Contract\V1\" />
+    <Folder Include="Contract\V1\Requests\" />
+    <Folder Include="Contract\V1\Responses\" />
   </ItemGroup>
 </Project>
