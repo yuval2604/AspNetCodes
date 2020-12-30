@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8JBdjCS7IrB6Zh2nvhN01XJaUXjqp1sUR519wUFe/svrhAPezLeYFhlGphTuJ//ZZDypRfeoL8xAgqJBMU3kYw==",
+  "dgSpecHash": "87Jbff2+E3ceBykXnesZn66CSOzkxFXtLfrQw6SV0JT4o1uHTGAVKK7KxHbru6zPbn8LKbfqJBBLc9eeWaV3XA==",
   "success": true,
   "projectFilePath": "/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/RestApiCourseTutorial.IntegrationTests/RestApiCourseTutorial.IntegrationTests.csproj",
   "expectedPackageFiles": [

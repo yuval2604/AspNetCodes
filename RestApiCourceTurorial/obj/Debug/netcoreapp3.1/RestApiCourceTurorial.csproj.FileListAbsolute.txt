@@ -1,6 +1,4 @@
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/obj/Debug/netcoreapp3.1/RestApiCourceTurorial.csprojAssemblyReference.cache
-/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/obj/Debug/netcoreapp3.1/RestApiCourceTurorial.AssemblyInfoInputs.cache
-/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/obj/Debug/netcoreapp3.1/RestApiCourceTurorial.AssemblyInfo.cs
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/obj/Debug/netcoreapp3.1/RestApiCourceTurorial.csproj.CoreCompileInputs.cache
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/obj/Debug/netcoreapp3.1/RestApiCourceTurorial.MvcApplicationPartsAssemblyInfo.cache
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/obj/Debug/netcoreapp3.1/RestApiCourceTurorial.RazorAssemblyInfo.cache
@@ -115,3 +113,5 @@
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.dll
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/RestApiCourseTutorial.IntegrationTests/obj/project.assets.json
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/RestApiCourseTutorial.IntegrationTests/obj/RestApiCourseTutorial.IntegrationTests.csproj.nuget.dgspec.json
