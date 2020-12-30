@@ -20,23 +20,26 @@ namespace RestApiCourceTurorial
 
                 using (var scope = host.Services.CreateScope())
                 {
-                    var services = scope.ServiceProvider;
-                    try
+                    var dbContext = serviceScope.ServiceProvider.GetRequiredService<DataContext>();
 
-                    {
-                        var context = services.GetRequiredService<DataContext>();
-                        context.Database.EnsureDeleted();
-                        context.Database.Migrate();
-                        
-                    }
-                    catch (Exception ex)
-                    {
-                        var logger = services.GetRequiredService<ILogger<Program>>();
-                        logger.LogError(ex, "An error occured during migration");
-                    }
+                    await dbContext.Database.MigrateAsync();
+
+                    // var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+                    // if (!await roleManager.RoleExistsAsync("Admin"))
+                    // {
+                    //     var adminRole = new IdentityRole("Admin");
+                    //     await roleManager.CreateAsync(adminRole);
+                    // }
+                    
+                    // if (!await roleManager.RoleExistsAsync("Poster"))
+                    // {
+                    //     var posterRole = new IdentityRole("Poster");
+                    //     await roleManager.CreateAsync(posterRole);
+                    // }
                 }
 
-                host.Run();
+                await host.RunAsync();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

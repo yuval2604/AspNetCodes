@@ -1,11 +1,9 @@
 ﻿<Properties StartupConfiguration="{7FAC025B-C12E-4A85-8DB1-18647FE4B248}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Contract/V1/Requests/userRegistrationRequest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/PostService.cs">
     <Files>
-      <File FileName="Data/DataContext.cs" Line="17" Column="9" />
-      <File FileName="Controllers/V1/IdentityController.cs" Line="56" Column="43" />
-      <File FileName="Services/IdentityService.cs" Line="48" Column="73" />
-      <File FileName="Contract/V1/Requests/UserLoginRequest.cs" Line="4" Column="34" />
-      <File FileName="Contract/V1/Requests/userRegistrationRequest.cs" Line="7" Column="36" />
+      <File FileName="Controllers/V1/PostsController.cs" Line="35" Column="60" />
+      <File FileName="Services/IPostService.cs" Line="15" Column="20" />
+      <File FileName="Services/PostService.cs" Line="63" Column="4" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,20 +12,17 @@
             <Node name="RestApiCourceTurorial" expanded="True">
               <Node name="Contract" expanded="True">
                 <Node name="V1" expanded="True">
-                  <Node name="Requests" expanded="True">
-                    <Node name="userRegistrationRequest.cs" selected="True" />
-                  </Node>
-                  <Node name="Responses" expanded="True" />
+                  <Node name="Requests" expanded="True" />
                 </Node>
               </Node>
               <Node name="Controllers" expanded="True">
                 <Node name="V1" expanded="True" />
               </Node>
-              <Node name="Data" expanded="True" />
               <Node name="Domain" expanded="True" />
-              <Node name="Installers" expanded="True" />
-              <Node name="Options" expanded="True" />
-              <Node name="Services" expanded="True" />
+              <Node name="Extensions" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="PostService.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -42,9 +37,7 @@
       <Breakpoint enabled="false" file="/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/Program.cs" relfile="Program.cs" line="27" column="1" />
       <Breakpoint enabled="false" file="/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/Program.cs" relfile="Program.cs" line="28" column="1" />
       <Breakpoint enabled="false" file="/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/Program.cs" relfile="Program.cs" line="29" column="1" />
-      <Breakpoint enabled="false" file="/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/Controllers/V1/IdentityController.cs" relfile="Controllers/V1/IdentityController.cs" line="25" column="1" />
-      <Breakpoint enabled="false" file="/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/Controllers/V1/IdentityController.cs" relfile="Controllers/V1/IdentityController.cs" line="27" column="1" />
-      <Breakpoint enabled="false" file="/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/Controllers/V1/IdentityController.cs" relfile="Controllers/V1/IdentityController.cs" line="28" column="1" />
+      <Breakpoint enabled="false" file="/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/Controllers/V1/IdentityController.cs" relfile="Controllers/V1/IdentityController.cs" line="37" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

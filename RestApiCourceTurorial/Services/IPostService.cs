@@ -12,5 +12,6 @@ namespace RestApiCourceTurorial.Services
         Task<bool> CreatePostAsync(Post post);
         Task<bool> DeletePostAsync(Guid postId);
         Task<bool> UpdatePostAsync(Post postToUpdate);
+        Task<bool> UserOwnsPostAsync(Guid postId, string userId);
     }
 }
