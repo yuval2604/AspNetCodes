@@ -106,3 +106,12 @@
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/AspNetCore.Authentication.ApiKey.dll
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/RestApiCourceTurorial.StaticWebAssets.xml
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.dll
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll

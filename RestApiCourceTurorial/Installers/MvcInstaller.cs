@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using RestApiCourceTurorial.Options;
+using RestApiCourceTurorial.Services;
 
 namespace RestApiCourceTurorial.Installers
 {
@@ -19,9 +20,9 @@ namespace RestApiCourceTurorial.Installers
             configuration.Bind(nameof(jwtSettings), jwtSettings);
             services.AddSingleton(jwtSettings);
 
-            //services.AddScoped<IIdentityService, IdentityService>();
+            services.AddScoped<IIdentityService, IdentityService>();
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             //{
             //    options.EnableEndpointRouting = false;
             //    options.Filters.Add<ValidationFilter>();
