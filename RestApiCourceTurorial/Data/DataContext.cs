@@ -14,7 +14,7 @@ namespace RestApiCourceTurorial.Data
         }
 
         public DbSet<Post> Posts { get; set; }
-        
+       
 
         
 

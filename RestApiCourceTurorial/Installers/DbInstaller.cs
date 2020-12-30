@@ -18,6 +18,8 @@ namespace RestApiCourceTurorial.Installers
            {
                opt.UseSqlite(configuration.GetConnectionString("DefaultConnection"));
            });
+
+           
     
        services.AddDefaultIdentity<IdentityUser>()
                 .AddRoles<IdentityRole>()
