@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{7FAC025B-C12E-4A85-8DB1-18647FE4B248}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Domain/User.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Contract/V1/Requests/userRegistrationRequest.cs">
     <Files>
-      <File FileName="Controllers/V1/IdentityController.cs" Line="1" Column="1" />
-      <File FileName="Domain/User.cs" Line="1" Column="1" />
+      <File FileName="Data/DataContext.cs" Line="17" Column="9" />
+      <File FileName="Controllers/V1/IdentityController.cs" Line="56" Column="43" />
+      <File FileName="Services/IdentityService.cs" Line="48" Column="73" />
+      <File FileName="Contract/V1/Requests/UserLoginRequest.cs" Line="4" Column="34" />
+      <File FileName="Contract/V1/Requests/userRegistrationRequest.cs" Line="7" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +14,9 @@
             <Node name="RestApiCourceTurorial" expanded="True">
               <Node name="Contract" expanded="True">
                 <Node name="V1" expanded="True">
-                  <Node name="Requests" expanded="True" />
+                  <Node name="Requests" expanded="True">
+                    <Node name="userRegistrationRequest.cs" selected="True" />
+                  </Node>
                   <Node name="Responses" expanded="True" />
                 </Node>
               </Node>
@@ -19,18 +24,13 @@
                 <Node name="V1" expanded="True" />
               </Node>
               <Node name="Data" expanded="True" />
-              <Node name="Domain" expanded="True">
-                <Node name="User.cs" selected="True" />
-              </Node>
+              <Node name="Domain" expanded="True" />
               <Node name="Installers" expanded="True" />
               <Node name="Options" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

@@ -18,16 +18,7 @@ namespace RestApiCourceTurorial.Installers
            {
                opt.UseSqlite(configuration.GetConnectionString("DefaultConnection"));
            });
-       //     services.AddDefaultIdentity<IdentityUser>()
-       //         .AddEntityFrameworkStores<DataContext>();
-
-       // //    services.AddDefaultIdentity<IdentityUser>()
-       // //.AddEntityFrameworkStores<DataContext>();
-
-
-       //     services.AddScoped<IPostService, PostService>();
-
-
+    
        services.AddDefaultIdentity<IdentityUser>()
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<DataContext>();
