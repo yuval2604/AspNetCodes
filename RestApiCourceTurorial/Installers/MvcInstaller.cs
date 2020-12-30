@@ -40,7 +40,7 @@ namespace RestApiCourceTurorial.Installers
                 ValidateLifetime = true
             };
 
-            //services.AddSingleton(tokenValidationParameters);
+            services.AddSingleton(tokenValidationParameters);
 
             services.AddAuthentication(x =>
             {

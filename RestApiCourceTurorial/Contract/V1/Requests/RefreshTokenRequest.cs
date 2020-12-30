@@ -1,7 +1,7 @@
 ﻿using System;
-namespace RestApiCourceTurorial.Contract.V1.Responses
+namespace RestApiCourceTurorial.Contract.V1.Requests
 {
-    public class AuthSuccessResponse
+    public class RefreshTokenRequest
     {
         public string Token { get; set; }
         public string RefreshToken { get; set; }

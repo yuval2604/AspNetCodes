@@ -14,13 +14,13 @@ namespace RestApiCourceTurorial
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
 
                 using (var scope = host.Services.CreateScope())
                 {
-                    var dbContext = serviceScope.ServiceProvider.GetRequiredService<DataContext>();
+                    var dbContext = scope.ServiceProvider.GetRequiredService<DataContext>();
 
                     await dbContext.Database.MigrateAsync();
 
