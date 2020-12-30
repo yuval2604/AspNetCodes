@@ -1,34 +1,22 @@
 ﻿<Properties StartupConfiguration="{7FAC025B-C12E-4A85-8DB1-18647FE4B248}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Domain/RefreshToken.cs">
-    <Files>
-      <File FileName="Data/DataContext.cs" Line="25" Column="28" />
-      <File FileName="Domain/RefreshToken.cs" Line="11" Column="28" />
-      <File FileName="Services/IdentityService.cs" Line="192" Column="42" />
-      <File FileName="Domain/AuthenticationResult.cs" Line="9" Column="22" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RestApiCourceTurorial" expanded="True">
             <Node name="RestApiCourceTurorial" expanded="True">
-              <Node name="Contract" expanded="True">
-                <Node name="V1" expanded="True">
-                  <Node name="Requests" expanded="True" />
-                  <Node name="Responses" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="Controllers" expanded="True">
-                <Node name="V1" expanded="True" />
-              </Node>
-              <Node name="Data" expanded="True" />
-              <Node name="Domain" expanded="True">
-                <Node name="RefreshToken.cs" selected="True" />
-              </Node>
-              <Node name="Extensions" expanded="True" />
-              <Node name="Installers" expanded="True" />
-              <Node name="Options" expanded="True" />
-              <Node name="Services" expanded="True" />
+              <Node name="RestApiCourseTutorial.IntegrationTests" expanded="True" />
             </Node>
+            <Node name="RestApiCourseTutorial.IntegrationTests" expanded="True">
+              <Node name="IntegrationTest.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="RestApiCourceTurorial" expanded="True">
+            <Node name="RestApiCourseTutorial.IntegrationTests" selected="True" />
           </Node>
         </State>
       </Pad>
