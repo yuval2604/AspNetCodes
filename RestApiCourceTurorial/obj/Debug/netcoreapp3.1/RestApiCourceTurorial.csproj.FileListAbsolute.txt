@@ -131,3 +131,5 @@
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/RestApiCourseTutorial.IntegrationTests/bin/Debug/netcoreapp3.1/RestApiCourseTutorial.IntegrationTests/bin/Debug/netcoreapp3.1/RestApiCourseTutorial.IntegrationTests/obj/RestApiCourseTutorial.IntegrationTests.csproj.nuget.dgspec.json
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/RestApiCourseTutorial.IntegrationTests/bin/Debug/netcoreapp3.1/RestApiCourseTutorial.IntegrationTests/obj/project.assets.json
 /Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/RestApiCourseTutorial.IntegrationTests/bin/Debug/netcoreapp3.1/RestApiCourseTutorial.IntegrationTests/obj/RestApiCourseTutorial.IntegrationTests.csproj.nuget.dgspec.json
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

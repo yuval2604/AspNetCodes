@@ -1,19 +1,16 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RestApiCourceTurorial.Contract;
-using RestApiCourceTurorial.Contract.V1;
-using RestApiCourceTurorial.Contract.V1.Requests;
-using RestApiCourceTurorial.Contract.V1.Responses;
 using RestApiCourceTurorial.Domain;
 using RestApiCourceTurorial.Extensions;
 using RestApiCourceTurorial.Services;
 using RestApiCourceTurorial.Contracts.V1.Responses;
+using RestApiCourceTurorial.Contracts.V1.Requests;
 
 namespace RestApiCourceTurorial.Controllers.V1
 {
@@ -74,7 +71,7 @@ namespace RestApiCourceTurorial.Controllers.V1
             var created = await _postService.CreateTagAsync(newTag);
             if (!created)
             {
-                return BadRequest(new ErrorResponse(new ErrorModel{Message = "Unable to create tag"}));
+                return BadRequest(new ErrorResponse(new Contracts.V1.Responses.ErrorModel { Message = "Unable to create tag" })) ;
             }
                 
             var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";

@@ -2,88 +2,122 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RestApiCourceTurorial.Contract;
 using RestApiCourceTurorial.Contract.V1.Requests;
-using RestApiCourceTurorial.Contract.V1.Responses;
+using RestApiCourceTurorial.Contracts.V1;
+using RestApiCourceTurorial.Contracts.V1.Requests;
+using RestApiCourceTurorial.Contracts.V1.Requests.Queries;
+using RestApiCourceTurorial.Contracts.V1.Responses;
 using RestApiCourceTurorial.Domain;
 using RestApiCourceTurorial.Extensions;
+using RestApiCourceTurorial.Helpers;
 using RestApiCourceTurorial.Services;
 
-namespace Tweetbook.Controllers.V1
+namespace RestApiCourceTurorial.Controllers.V1
 {
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class PostsController : Controller
     {
-        private IPostService _postService;
-        public PostsController(IPostService postService)
+        private readonly IPostService _postService;
+        private readonly IMapper _mapper;
+        private readonly IUriService _uriService;
+
+        public PostsController(IPostService postService, IMapper mapper, IUriService uriService)
         {
             _postService = postService;
+            _mapper = mapper;
+            _uriService = uriService;
         }
 
         [HttpGet(ApiRoutes.Posts.GetAll)]
-        public async Task<IActionResult> GetAll()
+       
+        public async Task<IActionResult> GetAll([FromQuery] GetAllPostsQuery query, [FromQuery]PaginationQuery paginationQuery)
         {
-           
-            return Ok(await _postService.GetPostsAsync());
+            var pagination = _mapper.Map<PaginationFilter>(paginationQuery);
+            var filter = _mapper.Map<GetAllPostsFilter>(query);
+            var posts = await _postService.GetPostsAsync(filter, pagination);
+            var postsResponse = _mapper.Map<List<PostResponse>>(posts);
+            
+            if (pagination == null || pagination.PageNumber < 1 || pagination.PageSize < 1)
+            {
+                return Ok(new PagedResponse<PostResponse>(postsResponse));
+            }
+
+            var paginationResponse = PaginationHelpers.CreatePaginatedResponse(_uriService, pagination, postsResponse);
+            return Ok(paginationResponse);
         }
 
         [HttpPut(ApiRoutes.Posts.Update)]
-        public async Task<IActionResult> Update([FromRoute] Guid postId, [FromBody] UpdatedPostRequest request)
+        public async Task<IActionResult> Update([FromRoute]Guid postId, [FromBody] UpdatedPostRequest request)
         {
             var userOwnsPost = await _postService.UserOwnsPostAsync(postId, HttpContext.GetUserId());
+
             if (!userOwnsPost)
             {
-                return BadRequest(new { error = "Youre not own this post" });
+                return BadRequest(new ErrorResponse(new ErrorModel{Message = "You do not own this post"}));
             }
+
             var post = await _postService.GetPostByIdAsync(postId);
             post.Name = request.Name;
 
             var updated = await _postService.UpdatePostAsync(post);
+
             if(updated)
-                return Ok(post);
+                return Ok(new Response<PostResponse>(_mapper.Map<PostResponse>(post)));
+
             return NotFound();
         }
-
-        [HttpGet(ApiRoutes.Posts.Get)]
-        public async Task<IActionResult> Get([FromRoute]Guid postId)
-        {
-            var post = await _postService.GetPostByIdAsync(postId);
-            if (post == null) return NotFound();
-            return Ok(post);
-        }
-
-        [HttpPost(ApiRoutes.Posts.Create)]
-        public async Task<IActionResult> Create([FromBody] CreatedPostRequest postRequest)
-        {
-            var post = new Post {
-                Name = postRequest.Name,
-                UserId = HttpContext.GetUserId()
-            };
-            
-            await _postService.CreatePostAsync(post);
-
-            var baseurl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
-            var locationUrl = baseurl + "/" + ApiRoutes.Posts.Get.Replace("{postId}", post.Id.ToString());
-            var response = new PostResponse { Id = post.Id };
-            return Created(locationUrl, response);
-        }
-
 
         [HttpDelete(ApiRoutes.Posts.Delete)]
         public async Task<IActionResult> Delete([FromRoute] Guid postId)
         {
             var userOwnsPost = await _postService.UserOwnsPostAsync(postId, HttpContext.GetUserId());
+
             if (!userOwnsPost)
             {
-                return BadRequest(new { error = "Youre not own this post" });
+                return BadRequest(new ErrorResponse(new ErrorModel{Message = "You do not own this post"}));
             }
+            
             var deleted = await _postService.DeletePostAsync(postId);
-            if (deleted) return NoContent();
+
+            if (deleted)
+                return NoContent();
+
             return NotFound();
         }
 
+        [HttpGet(ApiRoutes.Posts.Get)]
+       
+        public async Task<IActionResult> Get([FromRoute]Guid postId)
+        {
+            var post = await _postService.GetPostByIdAsync(postId);
+
+            if (post == null)
+                return NotFound();
+
+            return Ok(new Response<PostResponse>(_mapper.Map<PostResponse>(post)));
+        }
+
+        [HttpPost(ApiRoutes.Posts.Create)]
+        public async Task<IActionResult> Create([FromBody] CreatePostRequest postRequest)
+        {
+            var newPostId = Guid.NewGuid();
+            var post = new Post
+            {
+                Id = newPostId,
+                Name = postRequest.Name,
+                UserId = HttpContext.GetUserId(),
+                Tags = postRequest.Tags.Select(x => new PostTag { PostId = newPostId, TagName = x }).ToList()
+            };
+
+            await _postService.CreatePostAsync(post);
+
+            var locationUri = _uriService.GetPostUri(post.Id.ToString());
+            return Created(locationUri, new Response<PostResponse>(_mapper.Map<PostResponse>(post)));
+        }
     }
 }

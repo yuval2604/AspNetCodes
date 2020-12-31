@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "tnokXiRF/gD/P1Pu4JJD9Brkb06UCbv57RTOV9Kf38pQYYKuGORZL/7zCNJdw1ceyBgdAuCgxtBsXmdoMAC+Fw==",
+  "dgSpecHash": "BY9hQ+7lNTO41ZG5+o492CoyVDL2krLCQmdrwyRGJLoX+S4+J6gkKl3JjvHzLvCWKhQSqyPNF7Ln0lQQnHU5hQ==",
   "success": true,
   "projectFilePath": "/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/RestApiCourceTurorial.csproj",
   "expectedPackageFiles": [
     "/Users/user/.nuget/packages/aspnetcore.authentication.apikey/5.0.0/aspnetcore.authentication.apikey.5.0.0.nupkg.sha512",
     "/Users/user/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
+    "/Users/user/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.0/automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "/Users/user/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/user/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/3.1.0/microsoft.aspnetcore.authentication.jwtbearer.3.1.0.nupkg.sha512",
     "/Users/user/.nuget/packages/microsoft.aspnetcore.cryptography.internal/5.0.1/microsoft.aspnetcore.cryptography.internal.5.0.1.nupkg.sha512",

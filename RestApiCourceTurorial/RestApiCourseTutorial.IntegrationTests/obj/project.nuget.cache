@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/IqDwArBSn2BsDJMDCZhXIkyk4+XHZ1RouYrriJ07qji3+sv1aldYo6WL8wa9Sd8ABHwJAb8jGSBIvPu6K8haQ==",
+  "dgSpecHash": "iGzBKtuILV85gorLeJhq2VNSR47f80DpnC7b8AmSAIVCswT/xKPaVz/mvocrAB5oHCanhgDs3ZWOHLjiwFLD+w==",
   "success": true,
   "projectFilePath": "/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/RestApiCourseTutorial.IntegrationTests/RestApiCourseTutorial.IntegrationTests.csproj",
   "expectedPackageFiles": [
     "/Users/user/.nuget/packages/aspnetcore.authentication.apikey/5.0.0/aspnetcore.authentication.apikey.5.0.0.nupkg.sha512",
     "/Users/user/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
+    "/Users/user/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.0/automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "/Users/user/.nuget/packages/fluentassertions/5.7.0/fluentassertions.5.7.0.nupkg.sha512",
     "/Users/user/.nuget/packages/microsoft.aspnet.webapi.client/5.2.7/microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "/Users/user/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/3.1.0/microsoft.aspnetcore.authentication.jwtbearer.3.1.0.nupkg.sha512",
