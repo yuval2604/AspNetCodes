@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "JmXutaXY2TGuQeONs3l3yNMAgWO1A4AobO+t+BSAF5Di/x6kAKtSqTpUmWciVV5QuST18eJTIeyPge3Z4rviVA==",
+  "dgSpecHash": "tnokXiRF/gD/P1Pu4JJD9Brkb06UCbv57RTOV9Kf38pQYYKuGORZL/7zCNJdw1ceyBgdAuCgxtBsXmdoMAC+Fw==",
   "success": true,
   "projectFilePath": "/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/RestApiCourceTurorial.csproj",
   "expectedPackageFiles": [
     "/Users/user/.nuget/packages/aspnetcore.authentication.apikey/5.0.0/aspnetcore.authentication.apikey.5.0.0.nupkg.sha512",
+    "/Users/user/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/Users/user/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/user/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/3.1.0/microsoft.aspnetcore.authentication.jwtbearer.3.1.0.nupkg.sha512",
     "/Users/user/.nuget/packages/microsoft.aspnetcore.cryptography.internal/5.0.1/microsoft.aspnetcore.cryptography.internal.5.0.1.nupkg.sha512",
@@ -88,7 +89,7 @@
     "/Users/user/.nuget/packages/system.private.datacontractserialization/4.3.0/system.private.datacontractserialization.4.3.0.nupkg.sha512",
     "/Users/user/.nuget/packages/system.private.uri/4.3.2/system.private.uri.4.3.2.nupkg.sha512",
     "/Users/user/.nuget/packages/system.reflection/4.3.0/system.reflection.4.3.0.nupkg.sha512",
-    "/Users/user/.nuget/packages/system.reflection.emit/4.3.0/system.reflection.emit.4.3.0.nupkg.sha512",
+    "/Users/user/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512",
     "/Users/user/.nuget/packages/system.reflection.emit.ilgeneration/4.3.0/system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "/Users/user/.nuget/packages/system.reflection.emit.lightweight/4.3.0/system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "/Users/user/.nuget/packages/system.reflection.extensions/4.3.0/system.reflection.extensions.4.3.0.nupkg.sha512",

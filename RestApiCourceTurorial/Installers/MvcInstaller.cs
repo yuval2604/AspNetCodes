@@ -56,6 +56,13 @@ namespace RestApiCourceTurorial.Installers
 
             services.AddControllersWithViews();
 
+            // Chapter 17 
+            //services.AddAuthorization(options=>
+            //{
+            //    options.AddPolicy("TagViewer", builder => builder.RequireClaim("tags.view", "true"));
+            //});
+            services.AddAuthorization();
+
 
             services.AddSwaggerGen(x =>
             {

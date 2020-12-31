@@ -1,22 +1,21 @@
 ﻿<Properties StartupConfiguration="{7FAC025B-C12E-4A85-8DB1-18647FE4B248}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Contract/V1/Responses/ErrorResponse.cs">
+    <Files>
+      <File FileName="Contract/V1/Responses/ErrorResponse.cs" Line="9" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RestApiCourceTurorial" expanded="True">
             <Node name="RestApiCourceTurorial" expanded="True">
-              <Node name="RestApiCourseTutorial.IntegrationTests" expanded="True" />
+              <Node name="Contract" expanded="True">
+                <Node name="V1" expanded="True">
+                  <Node name="Responses" expanded="True">
+                    <Node name="ErrorResponse.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
             </Node>
-            <Node name="RestApiCourseTutorial.IntegrationTests" expanded="True">
-              <Node name="IntegrationTest.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="RestApiCourceTurorial" expanded="True">
-            <Node name="RestApiCourseTutorial.IntegrationTests" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -26,11 +25,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.RestApiCourceTurorial PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint enabled="false" file="/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/Program.cs" relfile="Program.cs" line="27" column="1" />
-      <Breakpoint enabled="false" file="/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/Program.cs" relfile="Program.cs" line="40" column="1" />
-      <Breakpoint enabled="false" file="/Users/user/PycharmProjects/soldgame/DotNet/AspNetCodes/RestApiCourceTurorial/Controllers/V1/IdentityController.cs" relfile="Controllers/V1/IdentityController.cs" line="37" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
