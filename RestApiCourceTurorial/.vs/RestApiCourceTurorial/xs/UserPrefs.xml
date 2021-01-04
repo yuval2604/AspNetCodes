@@ -3,20 +3,8 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="RestApiCourceTurorial" expanded="True">
+          <Node name="RestApiCourceTurorial" expanded="True" selected="True">
             <Node name="RestApiCourceTurorial" expanded="True">
-              <Node name="Contract" expanded="True">
-                <Node name="V1" expanded="True">
-                  <Node name="Requests" expanded="True">
-                    <Node name="CreateTagRequest.cs" selected="True" />
-                  </Node>
-                </Node>
-              </Node>
-              <Node name="Controllers" expanded="True">
-                <Node name="V1" expanded="True" />
-              </Node>
-              <Node name="Domain" expanded="True" />
-              <Node name="MappingProfiles" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
           </Node>
